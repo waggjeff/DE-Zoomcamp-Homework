@@ -57,3 +57,19 @@ SELECT count(1) FROM green_taxi_trips WHERE lpep_pickup_datetime >= '2019-01-01 
 
 
 Question 6:
+
+SELECT "LocationID", "Zone" FROM Zones;
+
+This shows that 'Astoria' is LocationID 7
+
+SELECT MAX(tip_amount) FROM green_taxi_trips WHERE "PULocationID"= 7;
+
+This shows that the largest tip was 88 USD
+
+SELECT "DOLocationID", tip_amount FROM green_taxi_trips WHERE "PULocationID"= 7 and tip_amount=88.0;
+
+The dropoff location ID was 146.
+
+SELECT "Zone" from zones where "LocationID"=146;
+
+Long Island City/Queens Plaza
