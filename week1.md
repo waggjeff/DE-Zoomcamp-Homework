@@ -8,7 +8,9 @@ docker build --help
 Question 2:
 
 docker run -it python:3.9
+
 python>import os
+
 python>os.system("pip list")
 
 
