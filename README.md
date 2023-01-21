@@ -1,2 +1,3 @@
 # DE-Zoomcamp-Homework
-Homework solutions for the 2023 DE Zoomcamp. 
+
+This repository contains my homework solutions for the 2023 Data Engineering Zoomcamp. 
