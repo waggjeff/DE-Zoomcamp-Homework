@@ -7,17 +7,9 @@ docker build --help
 
 Question 2:
 
-(base) jwagg-lt1:DE-Zoomcamp-Homework j.wagg$ docker run -it python:3.9
-Python 3.9.16 (main, Jan 11 2023, 15:55:30) 
-[GCC 10.2.1 20210110] on linux
-Type "help", "copyright", "credits" or "license" for more information.
->>> import os 
->>> os.system("pip list")
-Package    Version
----------- -------
-pip        22.0.4
-setuptools 58.1.0
-wheel      0.38.4
+docker run -it python:3.9
+python>import os
+python>os.system("pip list")
 
 
 
