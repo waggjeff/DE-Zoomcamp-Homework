@@ -73,3 +73,43 @@ The dropoff location ID was 146.
 SELECT "Zone" from zones where "LocationID"=146;
 
 Long Island City/Queens Plaza
+
+
+Part 1-b
+
+(base) jwagg-lt1:Terraform j.wagg$ terraform apply
+var.project
+  mythic-byway-375404
+
+  Enter a value: mythic-byway-375404
+
+google_storage_bucket.data-lake-bucket: Refreshing state... [id=dtc_data_lake_mythic-byway-375404]
+google_bigquery_dataset.dataset: Refreshing state... [id=projects/mythic-byway-375404/datasets/trips_data_all]
+
+Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
+  ~ update in-place
+
+Terraform will perform the following actions:
+
+  # google_bigquery_dataset.dataset will be updated in-place
+  ~ resource "google_bigquery_dataset" "dataset" {
+      - default_partition_expiration_ms = 5184000000 -> null
+      - default_table_expiration_ms     = 5184000000 -> null
+        id                              = "projects/mythic-byway-375404/datasets/trips_data_all"
+        # (9 unchanged attributes hidden)
+
+        # (4 unchanged blocks hidden)
+    }
+
+Plan: 0 to add, 1 to change, 0 to destroy.
+
+Do you want to perform these actions?
+  Terraform will perform the actions described above.
+  Only 'yes' will be accepted to approve.
+
+  Enter a value: yes
+
+google_bigquery_dataset.dataset: Modifying... [id=projects/mythic-byway-375404/datasets/trips_data_all]
+google_bigquery_dataset.dataset: Modifications complete after 3s [id=projects/mythic-byway-375404/datasets/trips_data_all]
+
+Apply complete! Resources: 0 added, 1 changed, 0 destroyed.
