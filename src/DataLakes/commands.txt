@@ -1,0 +1,19 @@
+Prefect
+
+# create conda environment 
+conda create -n zoomcamp python=3.9
+conda activate zoomcamp
+pip install -r requirements.txt
+prefect version
+python ingest_data.py
+prefect orion start 
+
+# for connecting to GCP (ETL workflow to upload data to GC storage (data Lake))
+from prefect_gcp.cloud_storage import GcsBucket
+gcp_cloud_storage_bucket_block = GcsBucket.load("zoom-gcs")
+
+# Now send data into Data warehouse
+python parametrized_flow.py
+# after queuing the workflow in prefect (see user interface)
+prefect agent start --work-queue "default"
+

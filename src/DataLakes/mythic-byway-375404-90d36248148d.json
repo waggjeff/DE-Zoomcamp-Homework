@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "mythic-byway-375404",
+  "private_key_id": "90d36248148d17673fb8d11c622d130eb2e34539",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQD8E4c17kxIj1QV\nGDWJR0vto1OXzdtEvsyujSM0Ho89vUtqYwV8DQbP8ieiLzNe+vLHn9BOpsMRpdlL\nQ3m4pLq+0unYerCCPc+KXn2ljAjOeL/1TbZ99Wh4BgVlR9wmGG/09vo7dPwr0MoR\nY5NUT67JHolzNf2GHRCGgPxw9wVcah4IKyK1hIxWlkVMp8iueNocM15WveetIHdU\ntkDtT97JQozYT3L85ck093weMpmzgwZuOi2iT/JSG41/XTiQWbhzCPNXE0bqMR3f\nWa7QFPdtw4amy2rhl7mHfsqOji63tfk8X2EIl2cy7NVYGWcL/wq/GCz7s9VWSTy3\nbW20tB6HAgMBAAECggEAbeedxjfV7rT/NgtOHEKHql7RrZhFh92gpGJI/Qpt7b9A\nyGvQElwjojq0aRQnU7waaksVqZUv69vht9z9jzHTcivHZWlo2ABXIr88DRfXJx6i\nozN048pB+EK3y4bfR4TUG3wrcgz5fakU0SwXKmVrkajMyPy7QuQdNme6qQ4qujV0\nyUDTcbqP+Q97kC93gX6ipFr/3GfI/KXyFNnLR8rKcc9IYsky+EJAV3f8UdO/RS/w\n8wL31a7ODyAKpPvLoVO9edhle+aUiuBLxGiepAdShSft1/5qfZ6koiBBE9mLdmDu\nE2KwMWJG/iAP8s5nWJy5TYHNYkM+XU9bJJaSvpJhUQKBgQD/jbv8WgJgs5gk+MS1\n9DmDEj+/uQDKkcJHJ7dxJy6gCTYycpI0QfXgx3HXSaii7AhXiHudWJhxPfKYQIjI\nOEbwmnyNnWTy4BAk7nNdbAHv3pKCBsFJPP7Bi1tQeg2hFUhHQARaGNVPvw1rjGZH\nkQAk1483sQ/oX6OBbaUp3cHy7QKBgQD8hD0v5yoRg9r7lH3RsW4o1h3w3ezxfVrw\nPF7Vx8KCK/SJrvUd5ANYD9d/OKFkMsytL8iuD/73DdV6cQiBEdtaFOF62TLnB2pl\nbjeoc1dUWm+LVhaLZZ9GEPzVhEWAG1aYKZxOvCGOsiXHMkwXQ8VF9nyofiZrbS4W\nIosmv3HkwwKBgQCCXjLNTLmzzUrLaaEoVZvVUsT0sJNHw84BcLBzaBKwD6L3X11Y\njWG6tuRLeMcvvguPZA/zuBOkiX6tzxY4VgVSju0FbYrnIAj8Xiy6NvRSAxBohrup\n+hTYdZgy2OEFEQ9bUbwmnk6LrSJSgEBZOA6DvPfR6GD+IXQO/flo/zkHDQKBgQC3\nwlP0pDiM/nNBWVImYwRTW132hsmDA0JGSOiKkhAOQoZ2G4fs9J0qXHzp7AAmtoEU\nFw3m/WUBzGNp8w/JPYFvEHr1t1G/pjnbDlYak7UdgaJit4c4cf9yMbKMfvFExKBD\noyRId8fD3Ah56TROSdcpjrIwu3yh+JXtLb4tuGvdmQKBgAfRwTAlZ+SAa/qZ6uYJ\nuPTqQohyetuCfOAld4xympBL9AQMGK7Hvh70z1yL+mn4Bz1i/chX9OLWndE8Jh43\n7TO5LtNFBfKZEQ5iXOUG/TATq8meqNl/4vsWFpQbvPO8ijzI4wslcb73q9ZvHFGz\n+2mKiHor2sBTQnWlOftoRbEt\n-----END PRIVATE KEY-----\n",
+  "client_email": "zoom-de-service-acct@mythic-byway-375404.iam.gserviceaccount.com",
+  "client_id": "116861315099978297669",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/zoom-de-service-acct%40mythic-byway-375404.iam.gserviceaccount.com"
+}
