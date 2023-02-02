@@ -16,8 +16,8 @@ def fetch(dataset_url: str) -> pd.DataFrame:
 @task(log_prints=True)
 def clean(df = pd.DataFrame) -> pd.DataFrame:
     """Fix dtype issues """
-    #df['lpepPickupDatetime'] = pd.to_datetime(df['lpepPickupDatetime'])
-    #df['lpepDropoffDatetime'] = pd.to_datetime(df['lpepDropoffDatetime'])
+    df['tpep_pickup_datetime'] = pd.to_datetime(df['tpep_pickup_datetime'])
+    df['tpep_dropoff_datetime'] = pd.to_datetime(df['tpep_dropoff_datetime'])
     print(df.head(2))
     print(f"columns: {df.dtypes}")
     print(f"rows: {len(df)}")
@@ -40,11 +40,11 @@ def write_gcs(path: Path) -> None:
     return 
         
 @flow()
-def etl_web_to_gcs_green() -> None:
+def etl_web_to_gcs() -> None:
     """The main ETL function"""
-    color = "green"
+    color = "yellow"
     year = 2019
-    month = 4
+    month = 3
     dataset_file = f"{color}_tripdata_{year}-{month:02}"
     dataset_url = f"https://github.com/DataTalksClub/nyc-tlc-data/releases/download/{color}/{dataset_file}.csv.gz"
 
@@ -55,4 +55,4 @@ def etl_web_to_gcs_green() -> None:
     write_gcs(path)
 
 if __name__ == '__main__':
-    etl_web_to_gcs_green()
+    etl_web_to_gcs()
