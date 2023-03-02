@@ -1,0 +1,34 @@
+Analytics
+
+- Set up DBT account and linked to github repository
+
+- install DBt using commandline:
+brew update
+brew tap dbt-labs/dbt
+brew install dbt-postgres
+install dbt-bigquery
+
+- create Bigquery Oath 2.0 client ID and secret (so that DBT can connect):
+    https://docs.getdbt.com/docs/collaborate/manage-access/set-up-bigquery-oauth#creating-a-bigquery-oauth-20-client-id-and-secret
+
+
+- in CP needed to upload full green and yellow taxi datasets to Google
+  Cloud Bucket: jwagg-nyc-tripdata
+- created two new tables for BigQuery:
+  mythic-byway-375404:trips_data_all:green and yellow
+- NOTE: data in Bucket needs to be held in same region as DB tables
+
+- rewatch 4.2.2 to see how to set up dbt project
+- dbt model: use qchincha {{ }}
+- video 4.3.2 shows how to use dbt to make a website for your project 
+
+- set up a new project on DBT: choose BigQuery as data Warehouse,
+  configure by uploading json key, development credential set to
+  dbt_jwagg
+  - clone repository:
+  https://github.com/waggjeff/ny_taxi_rides_zoomcamp
+  - take deploy key to GH:
+  ssh-rsa
+  AAAAB3NzaC1yc2EAAAADAQABAAACAQDA0F1rWimlvKAUMyBnh8ix5Vu1hRXOabHvzvsRTojmV4GJwQ2kSgAi+x0HAzdAABTBU3igEyDJF/FCYlIba+NckPLhDoBJSXYLTIYvLCjo/ieyYaIZ3PNEYwL/dZivj5qPFA4neVetZsvCf87YYOSMNAvJKX8LL4ZY9z/UkQJQobDIMJmO8DaGYm7ZihdEk2F9EoM4iLK/IypYovMudBJa46wciD7GVKD1ESsotVlorJNYNPu1cQiu+QcnxmmjKzwIabm7L7iNPR8B1EB+xu7Da7Y1pzRDtoT4DnJ9jsqmouagsyoUbYb0o943ZjFmut1uPwIyuWasRx4pee+dVLS+fWruSrXOxpZuC5iQXB2MRJ21zHcD0a1mNiJMGm38Msv05UEtvZuCABGg+v2yi3ONoGVFbK4VMVeS9uBYShNviFOKnkdnbQeX9xbH6nMZ3qp+EE6v6VKvDloFQ2HOa/5zc3dWPI+AgtG1Lj4CDUT4MAW2ldrk086asRAtMvH9njH6a9sEYNKfj7PQFaZgzy7/2zge1lYe8d9RG9K7UIDGI99nn79ijAue1vU5O3EMQgyhqf5jhqoINjQOdN086hNHu4JFmTC6yPcQW5S/fGoPA91xDRKuNhs279o4IsIq8l1gY8PTW12dvSoby+AZsYay5OOSkH3tfYl1SuuLbUdudQ==
+
+- in DBT 'initialize project' which will create all of the dirs
