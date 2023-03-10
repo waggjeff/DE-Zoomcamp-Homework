@@ -44,6 +44,13 @@ python3 producer_multiple.py
 This file has been modified to process both the [fhv_tripdata_2019-01.csv.gz](https://github.com/DataTalksClub/nyc-tlc-data/releases/tag/fhv) 
 and [green_tripdata_2019-01.csv.gz](https://github.com/DataTalksClub/nyc-tlc-data/releases/tag/green) datasets. 
 
+Also in the kafka directory, start the consumer which has been modified to read the 'rides_green' and 'rides_fhv' topics sent by the producer. 
+
+```bash
+python3 consumer_multiple.py
+```
+
+
 ### 5. Stop Services on Docker
 ```bash
 # Stop Docker-Compose (within for kafka and spark folders)
