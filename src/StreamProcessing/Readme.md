@@ -1,4 +1,4 @@
-### This directory contains code and homework solutions for week 6 of the Data Engineering zoomcamp. 
+## This directory contains the code and homework solutions for week 6 of the Data Engineering zoomcamp
 
 One needs to follow these steps to start the streaming process required for the homework. 
 
